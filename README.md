@@ -32,8 +32,7 @@ Below the associated stack:
 |--|--|--|
 | Empty | <signature_pubkey> <pubkeyLastK\> <pubkeyFirstN> <pubkeyFirstN\> OP_SWAP OP_CAT OP_CHECKSIG | Initial state  |
 | <signature_pubkey> | <pubkeyLastK\> <pubkeyFirstN\> OP_SWAP OP_CAT OP_CHECKSIG |  
-| <signature_pubkey> <pubkeyLastK\> | <pubkeyFirstN\> OP_SWAP OP_CAT OP_CHECKSIG |  
-| <signature_pubkey> <pubkeyLastK\> <pubkeyFirstN\> | OP_SWAP OP_CAT OP_CHECKSIG |  Both parts on the stack
+| <signature_pubkey> <pubkeyLastK\> | <pubkeyFirstN\> OP_SWAP OP_CAT OP_CHECKSIG |  Push both parts onto the stack
 | <signature_pubkey> <pubkeyLastK\> <pubkeyFirstN\> | OP_SWAP OP_CAT OP_CHECKSIG |  Swap last k with first n
 | <signature_pubkey> <pubkeyFirstN\> <pubkeyLastK\>  | OP_CAT OP_CHECKSIG |  Concatenate parts
 | <signature_pubkey> <pubKeyToCheck\>  | OP_CHECKSIG |  Check signature
